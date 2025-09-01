@@ -1,0 +1,20 @@
+name: ❓ 질문
+description: 궁금한 것이 있어요!
+title: "[Q] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: 질문 내용
+      description: 궁금한 것을 자유롭게 물어보세요
+      placeholder: "이 기능은 어떻게 사용하나요?"
+    validations:
+      required: true
+  
+  - type: textarea
+    id: context
+    attributes:
+      label: 추가 설명
+      description: 상황이나 배경 설명이 있으면 더 좋아요
+      placeholder: "A 기능을 사용하려고 하는데..."
