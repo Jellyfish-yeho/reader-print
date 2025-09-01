@@ -1,0 +1,37 @@
+name: ✨ 기능 제안
+description: 새로운 기능을 제안해주세요!
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: 제안 영역
+      options:
+        - Frontend
+        - Backend
+        - 기타
+    validations:
+      required: true
+  
+  - type: textarea
+    id: feature
+    attributes:
+      label: 어떤 기능인가요?
+      description: 원하는 기능을 간단히 설명해주세요
+      placeholder: "PDF 파일을 드래그&드롭으로 업로드하고 싶어요"
+    validations:
+      required: true
+  
+  - type: textarea
+    id: why
+    attributes:
+      label: 왜 필요한가요?
+      description: 이 기능이 왜 유용할지 설명해주세요
+      placeholder: "현재는 파일 선택창을 열어야 해서 불편해요"
+  
+  - type: textarea
+    id: additional
+    attributes:
+      label: 추가 정보
+      description: 참고할 만한 사이트나 아이디어가 있다면 알려주세요
