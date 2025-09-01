@@ -1,0 +1,48 @@
+name: 🐛 버그 리포트
+description: 버그를 발견했어요!
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: 발생 영역
+      options:
+        - Frontend
+        - Backend
+        - 기타
+    validations:
+      required: true
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: 버그 설명
+      description: 어떤 문제인지 간단히 설명해주세요
+      placeholder: "로그인 버튼을 눌러도 반응이 없어요"
+    validations:
+      required: true
+  
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 재현 방법
+      description: 버그를 다시 만드는 방법
+      placeholder: |
+        1. 메인페이지 접속
+        2. 로그인 버튼 클릭
+        3. 아무 반응 없음
+    validations:
+      required: true
+  
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대했던 동작
+      placeholder: "로그인 모달이 나타날 것으로 예상"
+  
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 스크린샷 (선택)
+      description: 가능하면 스크린샷을 첨부해주세요
