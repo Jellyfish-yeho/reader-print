@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const apiClient = axios.create({
-    baseURL: 'http://localhost:8080/api',
+    baseURL: `${process.env.NEXT_PUBLIC_API_BASE_URL}`,
 });
 
 // 간단한 테스트 함수
