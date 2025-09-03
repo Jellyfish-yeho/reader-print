@@ -15,6 +15,8 @@ export default function TestButton() {
         alert(apiResult)
     }
 
+    console.log("===========", `${process.env.NEXT_PUBLIC_API_BASE_URL}`)
+
     if (!mounted) return <div>로딩중...</div>
 
     return (
