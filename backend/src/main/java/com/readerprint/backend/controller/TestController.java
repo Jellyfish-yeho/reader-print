@@ -12,6 +12,7 @@ public class TestController {
     @GetMapping
     @CrossOrigin(origins = "http://localhost:3000") // cors 임시 설정
     public String test(){
+        System.out.println("test");
         return "Hello from Backend \uD83E\uDD16";
     }
 }
